@@ -392,11 +392,11 @@ def essay_question():
         H_m (w_1 ... w_n) = (−1/n) * log_2 (P_m (w1 ... w_n))
 
         This formula would produce the average negative log probability that the model assigns to each word in a sequence, which
-        is also normalized for sequence length. This value can be used as an estimate for how well the model can predict
+        is also normalised for sequence length. This value can be used as an estimate for how well the model can predict
         the next word in the sequence: the lower the entropy, the better the model. 
 
         This setup would allow us to come up with a reasonable estimate of the per-word entropy of English. Firstly, the use 
-        of a diverse corpus ensures our data is not biased towards a specifc genre or demographic. Additionally, our measure of
+        of a diverse corpus ensures our data is not biased towards a specific genre or demographic. Additionally, our measure of
         cross-entropy acts as an upper bound for the true entropy, therefore making it a reasonable estimate that is more likely to 
         overestimate the true value than underestimate it. Lastly, the choice of log base 2 allows us to provide an answer that 
         measures the necessary number of bits to encode the information in a word, thus aligning with the information-theoretical 
@@ -662,9 +662,9 @@ def open_question_2_3() -> str:
         the accuracy of the model. Therefore, I tried to incorporate these as part 
         of my chosen features, and extend the list of features by also considering 
         proper nouns and numbers. Additionally, based on the data provided, and also 
-        intuitively, numbers result in PP attachement to the verb in some instances, 
+        intuitively, numbers result in PP attachment to the verb in some instances, 
         and to the noun in others. Moreover, I tried to also lemmatize the words, and
-        also include POS taggs as features, but that seemed to make the accuracy worse.
+        also include POS tags as features, but that seemed to make the accuracy worse.
 
         Example 1: ('verb to')
         A quite common pattern in English that can indicate noun attachment is the
