@@ -2,4 +2,4 @@
 
 First coursework of the Foundations of Natural Language Processing course.
 
-Mark: 70/100
+Mark: 77/100
